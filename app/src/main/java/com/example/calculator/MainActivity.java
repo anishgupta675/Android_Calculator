@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getResetUtil() {
         if(getNumbers()) return;
+        if(operator.isEmpty()) return;
         prompt.setText(String.format("%s", getResult(operator.pop()).toString()));
     }
 
